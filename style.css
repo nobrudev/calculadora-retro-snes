@@ -1,0 +1,92 @@
+body {
+  background: linear-gradient(180deg, #87ceeb, #b0e0e6, #ffffff);
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculadora {
+  background: linear-gradient(to bottom, #6d6c6c, #4a4a4a);
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px solid #000;
+  box-shadow: 0 8px #2e2e2e;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+
+.calculadora:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 #2e2e2e;
+}
+
+#display {
+  width: 90%;
+  height: 40px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 22px;
+  color: #00ff00;
+  background: #000;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+  height: 60px;
+  font-size: 15px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
+  box-shadow: 0 4px #333;
+  transition:
+    tranform 0.1s,
+    box-shadow 0.1s;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 #333;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.numero {
+  background: #1e90ff;
+  color: #fff;
+}
+
+.operador {
+  background: #ff0000;
+  color: #fff;
+}
+
+.especial {
+  background: #228b22;
+  color: #fff;
+}
+
+.igual {
+  background: #ffd700;
+  color: #fff;
+  grid-column: span 2;
+}
