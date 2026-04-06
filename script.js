@@ -1,3 +1,5 @@
+const display = document.getElementById("display");
+
 function adicionar(valor) {
   const display = document.getElementById("display");
   display.value += valor;

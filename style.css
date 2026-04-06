@@ -24,8 +24,8 @@ body {
 }
 
 .calculadora:active {
-  transform: translateY(8px);
-  box-shadow: 0 0 #2e2e2e;
+  transform: none;
+  box-shadow: 0 8px #2e2e2e;
 }
 
 #display {
@@ -62,8 +62,8 @@ button {
 }
 
 button:active {
-  transform: translateY(4px);
-  box-shadow: 0 0 #333;
+  background: #666;
+  box-shadow: 0 4px #333;
 }
 
 button:hover {
